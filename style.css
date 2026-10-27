@@ -1,0 +1,26 @@
+*{box-sizing:border-box}
+:root{--cream:#f7f4ec;--gold:#e8d5a3;--muted:#cbd5cc;--green:#10211b}
+html{min-height:100%;background:#07110e}
+body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 50% 20%,#234035 0%,#152b23 45%,#0d1d17 100%);color:var(--cream);font-family:"DM Sans",sans-serif}
+.page{width:min(100% - 32px,880px);min-height:calc(100vh - 26px);margin:13px auto;padding:clamp(24px,4vh,42px) clamp(22px,7vw,70px) 28px;border:1px solid #c9c49a55;border-radius:42px;background:linear-gradient(145deg,#13292088,#0c1d1688);box-shadow:inset 0 0 60px #0000000b;display:flex;align-items:center;flex-direction:column;text-align:center}
+.birthday-heading{font-family:"Cormorant Garamond",serif;font-size:clamp(25px,3.8vw,35px);font-weight:500;color:#f4e8c9;letter-spacing:.015em;margin:0 0 17px}
+.birthday-heading span{font-family:"DM Sans",sans-serif;font-size:.65em;color:var(--gold);margin-left:4px}
+.photo-wrap{position:relative;width:min(230px,58vw);height:clamp(105px,18vh,155px);margin:0 auto 18px;flex-shrink:0}
+.birthday-photo,.photo-placeholder{width:100%;height:100%;border:1px solid #e8d5a399;border-radius:15px;object-fit:cover;box-shadow:0 8px 28px #0003}
+.photo-placeholder{display:none;align-items:center;justify-content:center;flex-direction:column;gap:5px;background:linear-gradient(145deg,#1b392c,#10241c);padding:10px}
+.flower{font-size:25px;color:var(--gold)}.placeholder-title{font-family:"Cormorant Garamond",serif;font-size:19px;color:#f4e8c9}.placeholder-subtitle{font-size:9px;color:#b9c8bc}.placeholder-subtitle strong{color:var(--gold);font-weight:500}
+.flower-icon{font-size:35px;line-height:1;color:var(--gold);margin:0 0 20px}
+.eyebrow{font-size:clamp(10px,1.6vw,14px);font-weight:500;letter-spacing:.25em;color:var(--gold);margin:0 0 24px}
+h1{font-family:"Cormorant Garamond",serif;font-weight:400;font-size:clamp(38px,7vw,67px);line-height:1;margin:0 0 25px;letter-spacing:-.045em;color:#fbf8f0}
+.message{font-size:clamp(13px,2.25vw,19px);font-weight:400;line-height:1.9;color:#d1d9d2;margin:0 0 clamp(26px,5vh,46px);max-width:700px}
+form{width:100%;max-width:700px;text-align:left}
+label{display:block;font-size:clamp(10px,1.7vw,14px);letter-spacing:.2em;color:var(--gold);margin:0 0 13px}
+input{width:100%;height:clamp(58px,10vh,82px);border:2px solid #e8d5a3;border-radius:22px;background:#08171099;color:#fff5db;text-align:center;letter-spacing:.55em;font-size:20px;outline:none;box-shadow:0 0 0 6px #e8d5a31c}
+input:focus{box-shadow:0 0 0 6px #e8d5a32b}input::placeholder{color:#87978b}
+.error{min-height:14px;margin:8px 0 8px;text-align:center;font-size:11px;color:#f0b6ad}
+button{width:100%;min-height:clamp(66px,10vh,86px);border:1px solid #f0dcb1;border-radius:100px;background:linear-gradient(135deg,#eddbb0,#cfbb8d);color:#182a21;font-family:"DM Sans",sans-serif;font-weight:500;font-size:clamp(14px,2.1vw,19px);letter-spacing:.01em;cursor:pointer;transition:transform .2s,box-shadow .2s;box-shadow:0 8px 25px #0002}
+button span{font-size:1.25em;margin-left:16px}button:hover{transform:translateY(-2px);box-shadow:0 12px 30px #0004}
+.footer-note{font-size:clamp(11px,1.9vw,16px);color:#a9b9ab;margin:26px 0 0;line-height:1.7}
+@media(max-width:560px){.page{width:calc(100% - 16px);min-height:calc(100vh - 16px);margin:8px auto;padding:23px 18px 22px;border-radius:30px}.birthday-heading{margin-bottom:14px}.photo-wrap{height:105px;margin-bottom:17px}.flower-icon{font-size:30px;margin-bottom:15px}.eyebrow{letter-spacing:.21em;margin-bottom:20px}h1{font-size:clamp(37px,9vw,48px);margin-bottom:20px}.message{line-height:1.75;margin-bottom:27px}.wide-only{display:none}input{border-radius:18px}.footer-note{margin-top:21px}}
+@media(max-height:760px){.page{padding-top:20px;padding-bottom:18px}.photo-wrap{height:95px}.flower-icon{margin-bottom:12px}.eyebrow{margin-bottom:16px}h1{margin-bottom:16px}.message{margin-bottom:20px}.footer-note{margin-top:16px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}

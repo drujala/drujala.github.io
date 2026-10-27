@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10211b">
+  <title>Happy Birthday, Ujala</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <div class="birthday-heading">Happy Birthday, Ujala <span>♡</span></div>
+
+    <div class="photo-wrap">
+      <!-- Upload your image in this folder as birthday-photo.jpg -->
+      <img src="birthday-photo.jpg" alt="A special photo for Ujala" class="birthday-photo"
+        onerror="this.style.display='none';document.getElementById('photoPlaceholder').style.display='flex';">
+      <div class="photo-placeholder" id="photoPlaceholder">
+        <span class="flower">✿</span>
+        <span class="placeholder-title">A little space for your photo</span>
+        <span class="placeholder-subtitle">Upload it as <strong>birthday-photo.jpg</strong></span>
+      </div>
+    </div>
+
+    <div class="flower-icon" aria-hidden="true">✿</div>
+    <p class="eyebrow">ONE TINY SECRET FIRST</p>
+    <h1>A little key, please?</h1>
+    <p class="message">This little world is waiting just for you. 💌<br>
+      If you’d like to step inside, ask Ujala for the 6-digit secret<br class="wide-only">
+      — promise, it’s a very sweet question to ask someone who<br class="wide-only">
+      made you smile.</p>
+
+    <form id="passwordForm">
+      <label for="password">YOUR SIX-DIGIT SECRET</label>
+      <input id="password" name="password" type="password" inputmode="text" maxlength="6" minlength="6"
+        placeholder="· · · · · ·" autocomplete="off" required>
+      <p class="error" id="errorMessage" aria-live="polite"></p>
+      <button type="submit">Unlock the magic <span>♡</span></button>
+    </form>
+    <p class="footer-note">No rush, no pressure — the secret is part of the surprise. 🌷</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
