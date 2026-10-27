@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101d1b">
+  <title>For Ujala, With Love</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <main class="scene">
+    <header class="topline"><span class="tiny-lily">✿</span><span>A LITTLE SOMETHING FOR YOU</span><span class="top-date">12 · 11</span></header>
+    <section class="hero">
+      <p class="eyebrow">made with a little extra love</p>
+      <h1>For <em>Ujala,</em><br>with love.</h1>
+      <p class="intro">A tiny birthday world, made just for you.<br>Take a breath, make a wish, and come a little closer.</p>
+
+      <div class="cake-stage" aria-label="Birthday cake with a candle. Click the candle to reveal your birthday message.">
+        <div class="halo"></div>
+        <div class="lily lily-left" aria-hidden="true"><span></span><i></i><b></b></div>
+        <div class="lily lily-right" aria-hidden="true"><span></span><i></i><b></b></div>
+        <div class="sparkle sparkle-a">✦</div><div class="sparkle sparkle-b">✧</div><div class="sparkle sparkle-c">✦</div>
+        <div class="cake">
+          <div class="cake-top"></div>
+          <div class="icing"></div>
+          <div class="cake-body"><span class="drip d1"></span><span class="drip d2"></span><span class="drip d3"></span><span class="drip d4"></span></div>
+          <div class="cake-plate"></div>
+        </div>
+        <button class="candle-button" id="candle" aria-label="Click to light the birthday candle">
+          <span class="flame" id="flame"></span><span class="wick"></span><span class="candle-stick"></span>
+        </button>
+        <div class="wish-message" id="wishMessage" role="status" aria-live="polite">
+          <span class="message-star">✧</span>
+          <p>Happy Birthday, Ujala!</p>
+          <small>May your world always find its way to the light.</small>
+        </div>
+      </div>
+
+      <p class="hint" id="hint"><span>✧</span> Psst… tap the little candle.</p>
+      <button class="enter-button" id="openGate">Enter your little birthday world <span>↗</span></button>
+      <p class="footer-note">A white lily for your softness. A little light for all that you are.</p>
+    </section>
+    <footer><span>JUST FOR YOU</span><span class="footer-heart">♡</span><span>ALWAYS, WITH LOVE</span></footer>
+  </main>
+
+  <div class="gate-backdrop" id="gate" aria-hidden="true">
+    <section class="gate-card" role="dialog" aria-modal="true" aria-labelledby="gateTitle">
+      <button class="close-gate" id="closeGate" aria-label="Close password window">×</button>
+      <div class="gate-flower">✿</div>
+      <p class="eyebrow">one tiny secret first</p>
+      <h2 id="gateTitle">A little key, please?</h2>
+      <p class="gate-copy">This little world is waiting just for you. 💌<br>If you’d like to step inside, ask Ujala for the 6-digit secret — promise, it’s a very sweet question to ask someone who made you smile.</p>
+      <form id="passwordForm">
+        <label for="password">YOUR SIX-DIGIT SECRET</label>
+        <input id="password" name="password" type="password" inputmode="text" maxlength="6" minlength="6" placeholder="· · · · · ·" autocomplete="off" aria-describedby="errorMessage" required>
+        <p class="error" id="errorMessage" aria-live="polite"></p>
+        <button class="unlock-button" type="submit">Unlock the magic <span>♡</span></button>
+      </form>
+      <p class="tiny-note">No rush, no pressure — the secret is part of the surprise. 🌷</p>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
