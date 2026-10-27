@@ -1,5 +1,5 @@
 // Replace this placeholder with the full URL of your existing dynamic birthday website.
-const DESTINATION_URL = "https://YOUR-DYNAMIC-BIRTHDAY-SITE-URL-HERE";
+const DESTINATION_URL = "https://ujala-birthday-flame.vercel.app";
 const SECRET_PASSWORD = "US1216";
 
 const form = document.getElementById("passwordForm");
